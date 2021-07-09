@@ -21,7 +21,7 @@ headers = {
           }
 
 #Global information
-print("More information https://github.com/tslenter/Cisco-DNA-Inventory/ or https://www.remotesyslog.com/")
+print("More information: https://github.com/tslenter/Cisco-DNA-Inventory/ or https://www.remotesyslog.com/")
 print('Running from directory: ', os.getcwd())
 
 #Add arguments
