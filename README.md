@@ -1,7 +1,7 @@
 # **Cisco-DNA-Inventory**
 
 ## 1. Introduction
-Cisco DNA Inventory prints the inventory of a Cisco DNA controller to a table within a CLI. Tested for version Cisco DNA 2.2.2.0
+Cisco DNA Inventory prints the inventory of a Cisco DNA controller to a table within a CLI. Tested for Cisco DNA 2.2.2.0.
 
 ## 2. Usage
 
