@@ -32,12 +32,6 @@ globals().update(vars(args))
 dnac_devices = PrettyTable(['Hostname','Platform Id','Software Type','Software Version','Up Time', 'Serial Nu', 'MGMT IP' ])
 dnac_devices.padding_width = 1
 
-#Create HTTP header
-headers = {
-              'content-type': "application/json",
-              'x-auth-token': ""
-          }
-
 #Generate token for DNA Controller
 def dnac_login(host, passwrd, user):
     # Generate token
