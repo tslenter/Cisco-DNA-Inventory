@@ -1,12 +1,17 @@
 # **Cisco-DNA-Inventory**
 
 ## 1. Introduction
-Cisco DNA Inventory prints the inventory of a Cisco DNA controller to a table within a console.
-
-Capabilities: Prints inventory tables of a Cisco DNA Controller
+Cisco DNA Inventory prints the inventory of a Cisco DNA controller to a table within a CLI.
 
 ## 2. Usage
-How to use within the CLI:
+
+### 2.1 Additional installation
+```
+pip install requests
+pip install prettytable
+```
+
+### 2.2 How to use within the CLI
 ```
 python extract_cisco_dna.py -n "<cisco DNA Controller IP or DNS>" -u "<username>" -p "<strong_pw>"
 ```
@@ -46,7 +51,7 @@ PayPal:
 To improve the code and functions we like to have you help. Send your idea or code to: info@remotesyslog.com or create a pull request. We will review it and add it to this project.
 
 ## 6. License
-"Cisco DNA Inventory" is a free application what can be used to control network devices via SSH.
+"Cisco DNA Inventory" is a free application what can be used to control the Cisco DNA Controller and extract device information.
 
 Copyright (C) 2021 Tom Slenter
 
