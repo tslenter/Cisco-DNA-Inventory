@@ -5,7 +5,6 @@ from requests.auth import HTTPBasicAuth
 import urllib3
 from prettytable import PrettyTable
 import argparse
-import json
 
 #Disable HTTPS validation
 urllib3.disable_warnings()
@@ -38,13 +37,14 @@ headers = {
               'content-type': "application/json",
               'x-auth-token': ""
           }
+
 #Generate token for DNA Controller
-def dnac_login(host, user, passw):
+def dnac_login(host, passwrd, user):
     # Generate token
     BASE_URL = 'https://' + host
     AUTH_URL = '/dna/system/api/v1/auth/token'
     USERNAME = user
-    PASSWORD = passw
+    PASSWORD = passwrd
 
     response = requests.post(BASE_URL + AUTH_URL, auth=HTTPBasicAuth(USERNAME, PASSWORD), verify=False)
     token = response.json()['Token']
@@ -63,7 +63,7 @@ def network_device_list(token, host):
 if hostname or username or password != None:
     print("Started session on: " + hostname)
     print("Started session with user: " + username)
-    login = dnac_login(hostname, username, password)
+    login = dnac_login(hostname, password, username)
     network_device_list(login, hostname)
     print(dnac_devices)
 else:
