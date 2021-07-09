@@ -8,10 +8,25 @@ Capabilities: Prints inventory tables of a Cisco DNA Controller
 ## 2. Usage
 How to use within the CLI:
 ```
-python extract_cisco_dna.py -n <cisco DNA Controller IP or DNS> -u <username> -p <strong_pw>
+python extract_cisco_dna.py -n "<cisco DNA Controller IP or DNS>" -u "<username>" -p "<strong_pw>"
 ```
 
-## 3. Donation
+## 3. Output
+The script generates the following output:
+```
+venv) C:\Users\tom\PycharmProjects\DNA-Controller>python extract_cisco_dna.py -n "<cisco_dna_Controller>" -u "<username>" -p "<strong_pw>"
+Script is created by Remote Syslog
+Running from directory:  C:\Users\tom\PycharmProjects\DNA-Controller
+Started session on: dnac.remotesyslog.com
+Started session with user: tom
++--------------------+--------------------------+---------------+------------------+------------------------+--------------------------+--------------------+
+|      Hostname      |       Platform Id        | Software Type | Software Version |        Up Time         |        Serial Nu         |      MGMT IP       |
++--------------------+--------------------------+---------------+------------------+------------------------+--------------------------+--------------------+
+|     12345TEST      |    AIR-CAP3702I-E-K9     |      None     |    17.3.3.26     | 38 days, 12:16:57.040  |       FCZ1767P1F0        |     10.172.0.1     |
+|  AP075000-RS3000   |        C9120AXI-E        |      None     |    17.3.3.26     | 35 days, 22:03:33.040  |       FVC2452P2T4        |     10.172.0.2     |
++--------------------+--------------------------+---------------+------------------+------------------------+--------------------------+--------------------+
+
+## 4. Donation
 
 Crypto:
 
@@ -25,11 +40,11 @@ PayPal:
 
 [![paypal](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KQKRPDQYHYR7W&currency_code=EUR&source=url)
 
-## 4. Help
+## 5. Help
 
 To improve the code and functions we like to have you help. Send your idea or code to: info@remotesyslog.com or create a pull request. We will review it and add it to this project.
 
-## 5. License
+## 6. License
 "Cisco DNA Inventory" is a free application what can be used to control network devices via SSH.
 
 Copyright (C) 2021 Tom Slenter
