@@ -15,7 +15,7 @@ username = None
 password = None
 
 #Global information
-print("Script is created by Remote Syslog")
+print("More information https://github.com/tslenter/Cisco-DNA-Inventory/ or https://www.remotesyslog.com/")
 print('Running from directory: ', os.getcwd())
 
 #Add arguments
