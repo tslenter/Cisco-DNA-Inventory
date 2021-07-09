@@ -66,3 +66,6 @@ For more information contact the author:
 Name author: Tom Slenter
 
 E-mail: info@remotesyslog.com
+
+## 7. Used resources
+https://blogs.cisco.com/developer/python-scripting-apis
