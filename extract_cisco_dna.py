@@ -14,6 +14,12 @@ hostname = None
 username = None
 password = None
 
+#Create HTTP header
+headers = {
+              'content-type': "application/json",
+              'x-auth-token': ""
+          }
+
 #Global information
 print("More information https://github.com/tslenter/Cisco-DNA-Inventory/ or https://www.remotesyslog.com/")
 print('Running from directory: ', os.getcwd())
