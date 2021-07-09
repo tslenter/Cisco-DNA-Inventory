@@ -20,7 +20,7 @@ python extract_cisco_dna.py -n "<cisco DNA Controller IP or DNS>" -u "<username>
 The script generates the following output:
 ```
 venv) C:\Users\tom\PycharmProjects\DNA-Controller>python extract_cisco_dna.py -n "<cisco_dna_Controller>" -u "<username>" -p "<strong_pw>"
-Script is created by Remote Syslog
+More information: https://github.com/tslenter/Cisco-DNA-Inventory/ or https://www.remotesyslog.com/
 Running from directory:  C:\Users\tom\PycharmProjects\DNA-Controller
 Started session on: dnac.remotesyslog.com
 Started session with user: tom
